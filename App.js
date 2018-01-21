@@ -1,23 +1,17 @@
-import {
-  StackNavigator,
-} from 'react-navigation';
+import React from 'react';
+import { Provider } from 'react-redux';
+import configureStore from './app/redux/configureStore';
+import NavigationApp from './app/NavigationApp'
 
-import PostList from './app/screens/PostList';
-import PostWebview from './app/screens/PostWebview';
+// const store = configureStore();
 
-const App = StackNavigator(
-  {
-    PostList: { screen: PostList },
-    PostWebview: {
-      screen: PostWebview,
-    }
-  },
-  {
-    navigationOptions: {
-      headerBackTitle: 'Back',
-      gesturesEnabled: false,
-    },
-  }
-);
+const rnredux = () =>  {
+  return (
+    <Provider>
+    {/* <Provider store={store}> */}
+      <NavigationApp />
+    </Provider>
+  )
+}
 
-export default App;
+export default rnredux;
