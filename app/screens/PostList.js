@@ -40,11 +40,6 @@ export default class PostList extends Component {
         };
     }
 
-    showSortModal() {
-        console.log()
-        this.setState({ modalIsVisible: true })
-    }
-
     componentDidMount() {
         this.props.navigation.setParams({ showSortModal: this.showSortModal.bind(this) });
         this.makeRemoteRequest();
@@ -52,7 +47,6 @@ export default class PostList extends Component {
 
     makeRemoteRequest = () => {
         const url = 'https://api.reddit.com/r/pics/' + this.state.sort + '.json';
-        console.log('url: ' + url)
         this.setState(
             {
                 loading: true
@@ -114,6 +108,10 @@ export default class PostList extends Component {
             }
         );
     };
+
+    showSortModal() {
+        this.setState({ modalIsVisible: true })
+    }
 
     render() {
         const { navigate } = this.props.navigation;

@@ -7,6 +7,7 @@ export default class PostWebview extends Component {
 
     static navigationOptions = ({ navigation }) => {
         openUrl = (url) => {
+            // TODO: hadle error properly changing state
             Linking.canOpenURL(url).then(supported => {
                 if (!supported) {
                     console.log('Can\'t handle url: ' + url);
