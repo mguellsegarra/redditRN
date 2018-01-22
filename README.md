@@ -28,11 +28,24 @@ Thanks to the awesome npm community, I've used several libraries in this learnin
 
 ## Approach
 
-
+* *ES6* Javascript code
+* *State management*: for keeping this basic and getting started with React Native patterns, I've coded this example using simple `setState` approach. Despite this, there's a WIP implementation in branch *develop* in order to use **Redux** approach.
+* Decouple functionalities in different components
+* Folder structure for screens, dumb components, and separated stylesheets in style.js files.
+* Callback patterns and usage of promises
+* It'll be better to separate the networking code inside the PostList component into a service, but for this, I think it will be worth to implement it properly with the Redux approach.
 
 ## TODO
 
-- Use an ORM, like Realm.
+- Finish Redux approach in `develop`.
+
+- Ability to load more posts (now it loads only the last 25 posts)
+
+- Use a side-bar to swtich different sub-reddits.
+
+- Use an ORM, like [Realm](https://github.com/realm/realm-js) for offline connection reading.
+
+- Android platform specific code
 
 ## Contributing
 
