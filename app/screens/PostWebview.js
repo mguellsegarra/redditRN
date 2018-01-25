@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { WebView, Linking, Button, View, Text, TouchableWithoutFeedback } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './PostWebview.style'
 
 export default class PostWebview extends Component {
@@ -27,7 +27,7 @@ export default class PostWebview extends Component {
                             numberOfLines={1} >
                             Open in
                     </Text>
-                        <Icon name="safari" style={styles.iconInline} />
+                        {/* <Icon name="safari" style={styles.iconInline} /> */}
                     </View>
                 </TouchableWithoutFeedback>
             )

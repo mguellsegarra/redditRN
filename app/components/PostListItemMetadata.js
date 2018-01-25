@@ -3,7 +3,7 @@ import {
     Text,
     View,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './PostListItemMetadata.style';
 
 export default class PostListItemMetadata extends Component {
@@ -13,7 +13,7 @@ export default class PostListItemMetadata extends Component {
 
         return (
             <View style={styles.postDetailsAuthorContainer}>
-                <Icon name="user" style={styles.iconInline} />
+                {/* <Icon name="user" style={styles.iconInline} /> */}
                 <Text
                     style={styles.postDetailsAuthorText}
                     ellipsizeMode={'tail'}
@@ -29,7 +29,7 @@ export default class PostListItemMetadata extends Component {
 
         return (
             <View style={styles.postDetailsIconContainer}>
-                <Icon name="star" style={styles.iconInline} />
+                {/* <Icon name="star" style={styles.iconInline} /> */}
                 <Text
                     style={styles.postDetailsIconText}
                     adjustsFontSizeToFit={true }
@@ -45,7 +45,7 @@ export default class PostListItemMetadata extends Component {
 
         return (
             <View style={styles.postDetailsIconContainer}>
-                <Icon name="comment" style={styles.iconInline} />
+                {/* <Icon name="comment" style={styles.iconInline} /> */}
                 <Text
                     style={styles.postDetailsIconText}
                     adjustsFontSizeToFit={true }

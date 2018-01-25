@@ -5,7 +5,6 @@ import {
     Image,
     TouchableWithoutFeedback,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './PostListItem.style';
 import PostListItemDate from './PostListItemDate'
 import PostListItemImage from './PostListItemImage'

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './PostListItemDate.style';
 
 // Relative time helper
@@ -20,7 +20,7 @@ export default class PostListItemDate extends Component {
 
         return (
             <View style={styles.postDetailsDateContainer}>
-                <Icon name="clock-o" style={styles.iconInline} />
+                {/* <Icon name="clock-o" style={styles.iconInline} /> */}
                 <Text style={styles.postDetailsDateText}>
                     {this.formatDate(date)}
                 </Text>

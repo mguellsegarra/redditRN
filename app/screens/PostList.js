@@ -7,7 +7,7 @@ import {
     TouchableWithoutFeedback
 } from 'react-native';
 import { List } from "react-native-elements";
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import PostListItem from '../components/PostListItem';
 import PostListSortModal from '../components/PostListSortModal';
 import styles from './PostList.style';
@@ -21,7 +21,8 @@ export default class PostList extends Component {
             title: 'r/pics',
             headerRight: (
                 <TouchableWithoutFeedback onPress={params.showSortModal ? params.showSortModal : () => null}>
-                    <Icon name="tag" style={styles.sortButton} />
+                    <View><Text>sort</Text></View>
+                    {/* <Icon name="tag" style={styles.sortButton} /> */}
                 </TouchableWithoutFeedback>
             )
         };
